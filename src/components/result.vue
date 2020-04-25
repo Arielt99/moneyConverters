@@ -1,6 +1,10 @@
 <template>
     <div class="result">
-    <h3 class="result">{{emitedResult}}</h3><h2>{{emitedChangeRate}}</h2>
+        <ion-card>
+            <p>{{originalAmount}} EUR</p>
+            <ion-icon name="swap"></ion-icon>
+            <h3 class="result">{{emitedResult}} {{emitedChangeRate}}</h3>
+        </ion-card>
     </div>
 </template>
 
@@ -9,7 +13,8 @@ export default {
   name: 'Result',
   props: {
       emitedResult: Object, 
-      emitedChangeRate: Object
+      emitedChangeRate: Object,
+      originalAmount: Object
       },
   data (){
     return {
@@ -21,3 +26,11 @@ created: function(){
 }
 }
 </script>
+<style>
+.result{
+    color:rgb(39, 39, 39);
+}
+ion-card{
+    margin-top: 5vh;
+}
+</style>
