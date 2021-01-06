@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@ionic/vue": "0.0.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.4",
     "dotenv": "^8.2.0",
     "ionic": "^5.4.16",
